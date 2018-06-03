@@ -1,0 +1,27 @@
+.drop-down {
+  margin: 40;
+  padding: 30;
+  border-color: black;
+}
+
+.icon {
+   font-family: 'icomoon';
+   font-size: 48;
+}
+
+DropDown {
+  background-color: #f6fdfc;
+  border-color: #f49242;
+  border-width: 1.5;
+  border-radius: 3;
+}
+
+.material-icon {
+  font-family: 'Material-Design-Iconic-Font';
+  font-size: 40;
+  margin: 30;
+}
+
+Button {
+	background-color: white;
+}

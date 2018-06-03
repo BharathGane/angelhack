@@ -1,0 +1,43 @@
+<Page loaded="onPageLoaded" xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:dd="nativescript-drop-down" backgroundColor="lightyellow">
+
+      <Page.actionBar>
+        <ActionBar title="Faculty App" icon="" class="action-bar" backgroud-color="orange">
+        </ActionBar>
+    </Page.actionBar>
+  <StackLayout orientation="vertical" width="350" height="500">
+  <StackLayout orientation="horizontal" margin="25">
+  <Label text="Faculty:" width="100"/>
+  <dd:DropDown cssClass="drop-down" items="{{ facultyDropDown }}" selectedIndex="{{ selectedFaculty }}" selectedIndexChanged="dropDownSelectedIndexChangedFaculty"
+/>
+<!--   <GridLayout rows="auto" columns="40,15,*">
+  <Label text="Faculty:" width="100"/>
+  <dd:DropDown cssClass="drop-down" items="{{ facultyDropDown }}" selectedIndex="{{ selectedFaculty }}" selectedIndexChanged="dropDownSelectedIndexChangedFaculty"
+/>
+                    </GridLayout> -->
+  </StackLayout>
+  <StackLayout orientation="horizontal" margin="25">
+  <Label text="Semester:" width="100"/>
+  <dd:DropDown cssClass="drop-down" items="{{ semesterDropDown }}" selectedIndex="{{ selectedSemester }}" selectedIndexChanged="dropDownSelectedIndexChangedSemester"
+/>
+  </StackLayout>
+  <StackLayout orientation="horizontal" margin="25">
+  <Label text="Subject:" width="100"/>
+  <dd:DropDown cssClass="drop-down" items="{{ subjectDropDown }}" selectedIndex="{{ selectedSubject }}" selectedIndexChanged="dropDownSelectedIndexChangedSubject"
+/>
+  </StackLayout>
+  <StackLayout orientation="horizontal" margin="25">
+  <Label text="Topic:" width="100"/>
+  <dd:DropDown cssClass="drop-down" items="{{ topicDropDown }}" selectedIndex="{{ selectedTopic }}"  selectedIndexChanged="dropDownSelectedIndexChangedTopic"
+/>
+  </StackLayout>
+
+  <StackLayout orientation="horizontal">
+  <Label text="&#xf3aa;" class="material-icon" margin="30" width="50" tap="onPlay" color="#f49242"/>
+  <Label text="&#xff3a7;" class="material-icon" width="50" tap="onPause" color="#f49242"/>
+  <Label text="&#xf3b6;" class="material-icon" width="50" tap="onStop" color="#f49242"/>
+ </StackLayout>
+
+ <Button text="Submit" tap="onSubmit" width="80" color="orange" margin-left="25"/>
+
+</StackLayout>
+</Page>
